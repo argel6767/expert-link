@@ -1,0 +1,89 @@
+.landing-page-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem; 
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+}
+
+.landing-page-nav h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.landing-page-nav button,
+.landing-page-nav select {
+    font-size: .8rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    background-color: var(--primary);
+    color: var(--bg-white);
+    cursor: pointer;
+}
+
+.landing-page-nav select {
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+}
+
+.hero-container {
+    background-image: url('https://placehold.co/1200x600/000000/FFFFFF/png?text=Hero+Image');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px; /* Adjust as needed */
+    color: var(--bg-white); /* Light text color for contrast */
+    text-align: center;
+    padding: 2rem;
+    position: relative; /* Needed for potential overlay */
+}
+
+/* Optional: Add an overlay for better text readability */
+.hero-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark semi-transparent overlay */
+    z-index: 0;
+}
+
+.hero-container > * { /* Target direct children to be above the overlay */
+    position: relative;
+    z-index: 1;
+}
+
+.hero-container h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+}
+
+.hero-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+}
+
+.hero-container button {
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--primary); /* Using a variable from global.css */
+    color: var(--bg-white);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-container button:hover {
+    background-color: var(--primary-dark);
+}
