@@ -1,5 +1,6 @@
 @import url("./index.css");
 @import url("./profile.css");
+@import url("./request-info.css");
 
 :root {
   --primary: #2563eb;
@@ -12,6 +13,8 @@
   --border-color: #e5e7eb;
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
 }
 
 footer {
@@ -33,5 +36,20 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 0rem 2rem;
-    color: var(--text-dark)
+    color: var(--text-dark);
 }
+
+.primary-button {
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--primary);
+    color: var(--bg-white);
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background-color: var(--primary-dark);
+}
+

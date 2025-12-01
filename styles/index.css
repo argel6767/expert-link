@@ -87,9 +87,6 @@
     background-color: var(--primary-dark);
 }
 
-.hero-container button:hover {
-    background-color: var(--primary-dark);
-}
 
 .expert-gallery {
     display: flex;

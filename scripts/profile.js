@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (moreInfo) {
         moreInfo.addEventListener('click', () => {
-            window.location.href = 'request-info.html';
+            window.location.href = 'specialist-request-info.html';
         });
     }
 });
