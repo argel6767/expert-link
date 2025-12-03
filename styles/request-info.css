@@ -60,7 +60,8 @@
     background-color: var(--bg-light);
     box-shadow: var(--shadow);
     overflow-y: scroll;
-    max-height: 120px;
+    min-height: 100px;
+    max-height: 200px;
 }
 
 .received-message {

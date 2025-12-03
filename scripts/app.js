@@ -9,4 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     }                                                                                                                                                                                                                  
-});   
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const viewClarkKent = document.getElementById('view-profile');
+    if (viewClarkKent) {
+        viewClarkKent.onclick = () =>window.location.href = "specialist-profile.html";
+    }
+});
