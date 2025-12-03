@@ -1,6 +1,7 @@
 @import url("./index.css");
 @import url("./profile.css");
 @import url("./request-info.css");
+@import url("./specialist-found.css");
 
 :root {
   --primary: #2563eb;
@@ -40,8 +41,8 @@ ul {
 }
 
 .primary-button {
-    font-size: 1.2rem;
-    padding: 0.75rem 1.5rem;
+    font-size: .75rem;
+    padding: 0.3rem 0.8rem;
     border: none;
     border-radius: 0.5rem;
     background-color: var(--primary);

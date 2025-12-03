@@ -160,6 +160,10 @@
 
 .review {
     flex: 1;
+    background-color: var(--bg-light);
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    padding: 1rem;
 }
 
 .review-text {

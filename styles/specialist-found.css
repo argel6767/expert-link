@@ -1,0 +1,52 @@
+.main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-body h2 {
+    font-size: 32px;
+}
+
+.specialist-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    background-color: var(--bg-light);
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    border-color: var(--border-color);
+    padding: 1rem;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    max-height: 900px;
+}
+
+.specialist-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.specialist-found-item {
+    color: var(--text-dark);
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 30px 150px 1fr auto auto;
+    gap: 18px;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #f3f4f6;
+    width: 650px;
+    box-shadow: var(--shadow);
+    border-color: var(--border-color);
+    border-radius: 5px;
+}
