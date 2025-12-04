@@ -17,3 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
         viewClarkKent.onclick = () =>window.location.href = "specialist-profile.html";
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const goHome = document.getElementById('go-home');
+    if (goHome) {
+        goHome.onclick = () => window.location.href = "index.html";
+    }
+});

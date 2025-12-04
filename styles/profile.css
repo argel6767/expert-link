@@ -4,6 +4,10 @@
     font-size: 3rem;
 }
 
+.logged-in-nav h1:hover {
+    cursor: pointer;
+}
+
 .logged-in-nav span {
     font-size: 1rem;
     display: flex;
