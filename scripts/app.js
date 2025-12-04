@@ -14,6 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const viewClarkKent = document.getElementById('view-profile');
     if (viewClarkKent) {
-        viewClarkKent.onclick = () =>window.location.href = "specialist-profile.html";
+        viewClarkKent.onclick = () =>window.location.href = "public-profile.html";
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const goHome = document.getElementById('go-home');
+    if (goHome) {
+        goHome.onclick = () => window.location.href = "index.html";
     }
 });
