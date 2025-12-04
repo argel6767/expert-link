@@ -6,19 +6,28 @@ document.addEventListener('DOMContentLoaded', () => {
         switch (select.value) {
             case 'card':
                 detailsLi.innerHTML = `
+                    <div class="containers-row">
+                        <div class="container-column">
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" placeholder="First Name*"/>
+                        </div>
+                        <div class="container-column">
+                            <label for="Lname">Last Name:</label>
+                            <input type="text" id="Lname" placeholder="Last Name*"/>
+                        </div>
+                    </div>
                     <div class="container-column">
                         <label for="card-number">Card Number:</label>
-                        <input type="text" id="card-number"/>
+                        <input type="text" id="card-number" placeholder="Type Card # Here*"/>
                     </div>
-
                     <div class="containers-row">
                         <div class="container-column">
                             <label for="exp-date">Exp Date:</label>
-                            <input type="text" id="exp-date"/>
+                            <input type="text" id="exp-date" placeholder="MM/YY*"/>
                         </div>
                         <div class="container-column">
                             <label for="cvv">CVV:</label>
-                            <input type="text" id="cvv"/>
+                            <input type="text" id="cvv" placeholder="CVV*"/>
                         </div>
                     </div>
                 `;
@@ -44,4 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
     select.addEventListener('change', updatePaymentDetails);
 
     updatePaymentDetails();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const submitPayment = document.getElementById('payment-submit');
+    if (submitPayment) {
+        submitPayment.onclick = () => {
+            alert("Payment has been submitted");    
+            window.location.href = "index.html";
+        }
+    }
 });

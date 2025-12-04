@@ -26,34 +26,51 @@
         <h2>Submit Payment</h2>
 
         <div class="container-box">
-            <div class="container-row">
-                <div class="container-column">
-                    <p style="font-weight: bold;">Payment Options:</p>
-                    <div>
-                        <ul>
-                            <li>
-                                <select class="drop-adjust" id="payment-method">
-                                    <option value="card">Credit Card/Debit Card</option>
-                                    <option value="paypal">PayPal</option>
-                                    <option value="apple">Apple Pay</option>
-                                    <option value="google">Google Pay</option>
-                                </select>
-                            </li>
-                            <li id="payment-details"></li>
-                        </ul>
+                <div class="container-row">
+                    <div class="container-column">
+                        <p style="font-weight: bold;">Payment Options:</p>
+                        <div>
+                            <ul>
+                                <li>
+                                    <select class="drop-adjust" id="payment-method">
+                                        <option value="card">Credit Card/Debit Card</option>
+                                        <option value="paypal">PayPal</option>
+                                        <option value="apple">Apple Pay</option>
+                                        <option value="google">Google Pay</option>
+                                    </select>
+                                </li>
+                                <li id="payment-details"></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="container-column">
-                    <p style="font-weight: bold;">Payment Summary</p>
-                    <div>
-                        <ul>
-                            <li></li>
-                        </ul>
+                    <div class="container-column">
+                            <p style="font-weight: bold;">Payment Summary</p>
+                            <div class="inner-box">
+                                <div class="inner-left-column">
+                                    <ul>
+                                        <li>Quote</li>
+                                        <li>Shipping</li>
+                                        <li>Tax</li>
+                                        <li>Total</li>
+                                    </ul>
+                                </div>
+                                <div class="inner-right-column">
+                                    <ul>
+                                        <li>$165.00</li>
+                                        <li>$16.50</li>
+                                        <li>$0.00</li>
+                                        <li>$181.00</li>
+                                    </ul>
+                                </div>
+                            </div>
                     </div>
+                    
                 </div>
-            </div>
 
-            <div class="center-button">Confirm Payment</div>
+                <div class="center-button" id="payment-submit">
+                    <button>Confirm Payment</button>
+                </div>
+            
         </div>
 
 </div>

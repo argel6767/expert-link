@@ -10,11 +10,15 @@
 
 /*box css*/
 .container-box {
-    width: 400px;
+    width: 75%;
+    max-width: 750px;
+    min-width: 750px;
     padding: 20px;
     border: 2px solid var(--border-color);
     border-radius: 10px;
 }
+
+
 
 .container-row {
     display: flex;
@@ -48,22 +52,24 @@
     transform: translateX(-50%);
 }
 
-.center-button {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    border: 2px solid var(--border-color);
+.surround {
+    max-width: 750px;
+    min-width: 750px;
 }
 
-.containers-box {
-    display: flex;
-    flex-wrap: wrap;
-    width: 30%;
-    height: 20em;
-    border:2px solid var(--border-color);
-    margin-bottom: 20px;
-    padding: 10px;
+.center-button {
+    text-align: center;
     
+}
+
+.center-button button {
+    border: 2px solid var(--border-color);
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.center-button button:hover {
+    background-color: var(--primary-light);
 }
 
 .containers-row {
@@ -75,13 +81,27 @@
 
 .drop-adjust {
     padding: 10px;
-
     box-sizing: border-box;
     margin-bottom: 15px;
     border: 1px solid var(--border-color);
     border-radius: 5px;
 }
 
+.inner-box {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.inner-left-column {
+    flex: 1;
+    padding: 15px;
+}
+
+.inner-right-column {
+    flex: 1;
+    padding: 15px;
+    text-align: right;
+}
 
 /*payment.js label css*/
 input {
