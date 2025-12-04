@@ -70,7 +70,7 @@
     box-shadow: var(--shadow);
     border-radius: 5px;
     padding: 1rem;
-    width: 17rem;
+    max-width: 23rem;
     align-self: start;
 }
 
@@ -79,7 +79,7 @@
     background-color: var(--bg-white);
     box-shadow: var(--shadow);
     padding: 1rem;
-    width: 17rem;
+    max-width: 23rem;
     align-self: end;
     border-radius: 5px;
 }
