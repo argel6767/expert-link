@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specialist Request Info</title>
+    <title>Specialist Found</title>
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="icon" href="../public/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <nav class="logged-in-nav">
@@ -16,46 +17,50 @@
             </svg>
             <select id="more-options">
                 <option>More</option>
-                <option data-href="specialist-profile.html">Go Back</option>
                 <option data-href="settings.html">Settings</option>
                 <option data-href="index.html">Sign Out</option>
             </select>
         </span>
     </nav>
-    <main>
-        <h2 class="sub-header">Request Information</h2>
-        <span class="project-info">
-            <p>Request ID: 12345</p>
-            <p>Requester: Leon Kennedy</p>
-            <p>Specialist: You</p>
-            <p>Status:  <select class="progress-dropdown">
-                <option>Not Started</option>
-                <option>In Progress</option>
-                <option>Complete</option>
-                <option>Shipped</option>
-            </select></p>
-        </span>
-        <h3 class="project-description-sub-header">Project Description</h3>
-        <p class="project-description">The projector is malfunctioning and needs to be repaired. It is not turning on and shows an error code "E01". Please diagnose the issue and provide a solution.</p>
-        <nav class="cancel-job">
-            <button>Cancel Job</button>
-        </nav>
-        
-        <label for="message-box" class="message-box-label">Message Barry</label>
-        <div id="message-box" name="message-box">
-            <input class="received-message" type="text"  disabled value="Can I have an update on my computer?">
-            <input class="sent-message" type="text" disabled value="Your computer should be done in a few days"/>
+    <main class="main-body">
+        <h2>4 Manufacturers Found for {part}</h2>
+        <div class="specialist-container">
+            <ul>
+                <li class="specialist-found-item">
+                    <i class="fa fa-building"></i>
+                    <p>Wayne Enterprises</p>
+                    <p>Woodworking & Cabinetry</p>
+                    <button id="view-profile" class="primary-button">View Site</button>
+                    <button class="primary-button">Refer Me</button>
+                </li>
+                <li class="specialist-found-item">
+                    <i class="fa fa-building"></i>
+                    <p>Stark Industries</p>
+                    <p>Woodworking & Custom Design</p>
+                    <button id="view-profile" class="primary-button" disabled>View Site</button>
+                    <button class="primary-button" disabled>Refer Me</button>
+                </li>
+                <li class="specialist-found-item">
+                    <i class="fa fa-building"></i>
+                    <p>Oscorp</p>
+                    <p>Woodworking & Scenic Design</p>
+                    <button id="view-profile" class="primary-button" disabled>View Site</button>
+                    <button class="primary-button" disabled>Refer Me</button>
+                </li>
+                <li class="specialist-found-item">
+                    <i class="fa fa-building"></i>
+                    <p>LexCorp</p>
+                    <p>Woodworking & Environmental Design</p>
+                    <button id="view-profile" class="primary-button" disabled>View Site</button>
+                    <button class="primary-button" disabled>Refer Me</button>
+                </li>
+            </ul>
         </div>
-        <span class="send-message">
-            <input type="text" id="new-message" name="new-message" placeholder="Type your message here..."/>
-            <button id="send-message">Send Message</button>
-        </span>
     </main>
-    <script src="../scripts/app.js"></script>
-    <script src="../scripts/request-info.js"></script>
     <footer>
         <p>&copy; 2025 ExpertLink Software. All rights reserved.</p>
         <img src="../public/logo.png" width="170" height="70"/>
     </footer>
+    <script src="../scripts/app.js"></script>
 </body>
 </html>

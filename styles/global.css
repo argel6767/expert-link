@@ -56,3 +56,8 @@ ul {
     background-color: var(--primary-dark);
 }
 
+.primary-button:disabled {
+    background-color: var(--primary);
+    cursor: not-allowed;
+}
+
