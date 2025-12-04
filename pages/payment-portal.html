@@ -22,24 +22,46 @@
             </select>
         </span>
     </nav>
-    <main class="main-body">
-        <h2>11 Specialists Found for Woodworking</h2>
-        <div class="specialist-container">
-            <ul>
-                <li class="specialist-found-item">
-                    <i class="fa fa-user"></i>
-                    <p>Clark Kent</p>
-                    <p>Woodworking & Carpentry</p>
-                    <button id="view-profile" class="primary-button">View Profile</button>
-                    <button class="primary-button">Contact</button>
-                </li>
-            </ul>
+    <main class="main-body-pay">
+        <h2>Submit Payment</h2>
+
+        <div class="container-box">
+            <div class="container-row">
+                <div class="container-column">
+                    <p style="font-weight: bold;">Payment Options:</p>
+                    <div>
+                        <ul>
+                            <li>
+                                <select class="drop-adjust" id="payment-method">
+                                    <option value="card">Credit Card/Debit Card</option>
+                                    <option value="paypal">PayPal</option>
+                                    <option value="apple">Apple Pay</option>
+                                    <option value="google">Google Pay</option>
+                                </select>
+                            </li>
+                            <li id="payment-details"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-column">
+                    <p style="font-weight: bold;">Payment Summary</p>
+                    <div>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center-button">Confirm Payment</div>
         </div>
+
+</div>
     </main>
     <footer>
         <p>&copy; 2025 ExpertLink Software. All rights reserved.</p>
         <img src="../public/logo.png" width="170" height="70"/>
     </footer>
-    <script src="../scripts/app.js"></script>
+    <script src="../scripts/payment.js"></script>
 </body>
 </html>
