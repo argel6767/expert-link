@@ -32,7 +32,7 @@
                 </div>
                 <div class="specialist-interaction-buttons">
                    <a href="public-profile.html">Hire</a> 
-                   <a>Write a review</a>
+                   <a id="write-review-btn">Write a review</a>
                 </div>
                 
             </span>
@@ -49,14 +49,17 @@
             <h2>Reviews</h2>
             <div class="review-container">
                 <div class="review">
+                    <p><strong>&#9733;&#9733;&#9733;&#9733;&#9734;</strong></p>
                     <p class="review-text">Clark did an amazing job fixing my home theater system. Highly recommend!</p>
                     <p class="reviewer-name">Arthur Morgan</p>
                 </div>
                 <div class="review">
+                    <p><strong>&#9733;&#9733;&#9733;&#9733;&#9733;</strong></p>
                     <p class="review-text">The custom bookshelf Clark built for me is stunning and perfectly crafted.</p>
                     <p class="reviewer-name">Sadie Adler</p>
                 </div>
                 <div class="review">
+                    <p><strong>&#9733;&#9733;&#9733;&#9733;&#9733;</strong></p>
                     <p class="review-text">Clark built an amazing and affordable computer for my son's birthday!</p>
                     <p class="reviewer-name">John Marston</p>
                 </div>
@@ -69,5 +72,25 @@
     </footer>
     <script src="../scripts/app.js"></script>
     <script src="../scripts/profile.js"></script>
+    <dialog id="review-dialog">
+    <h2>Write a Review</h2>
+    <form id="review-form">
+        <label>Rating:</label>
+        <select id="rating" required>
+            <option value="">Select</option>
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+        </select>
+        <br><br>
+        <label>Review:</label>
+        <textarea id="review-text" rows="4" required></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="button" id="cancel-btn">Cancel</button>
+    </form>
+</dialog>
 </body>
 </html>

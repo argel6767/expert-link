@@ -158,13 +158,17 @@
 }
 
 .review-container {
-    display: flex;
+    color: var(--text-dark);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 1rem;
 }
 
 .review {
-    flex: 1;
-    background-color: var(--bg-light);
+    background-color: #f3f4f6;
     box-shadow: var(--shadow);
     border-radius: 5px;
     padding: 1rem;
@@ -178,3 +182,27 @@
     font-style: italic;
 }
 
+#review-dialog {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#review-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#review-form {
+    min-width: 400px;
+    box-shadow: var(--shadow);
+}
+
+#review-form textarea,
+#review-form select {
+    width: 100%;
+    padding: 5px;
+}
+
+#review-form button {
+    padding: 8px 16px;
+    margin-right: 10px;
+}

@@ -7,3 +7,44 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const dialog = document.getElementById('review-dialog');
+    const form = document.getElementById('review-form');
+    const cancelBtn = document.getElementById('cancel-btn');
+    
+    // Find and setup "Write a Review" button
+    const reviewBtn = document.getElementById('write-review-btn');
+    if (reviewBtn) {
+        reviewBtn.addEventListener('click', () => {
+            dialog.showModal();
+        });
+    }
+    
+    // Cancel button
+    cancelBtn.addEventListener('click', () => {
+        dialog.close();
+        form.reset();
+    });
+    
+    // Submit form
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const rating = document.getElementById('rating').value;
+        const text = document.getElementById('review-text').value;
+        
+        // Add review to page
+        const reviewContainer = document.querySelector('.review-container');
+        const newReview = document.createElement('div');
+        newReview.className = 'review';
+            newReview.innerHTML = `
+            <p><strong>${'&#9733;'.repeat(rating)}${'&#9734;'.repeat(5 - rating)}</strong></p>
+            <p class="review-text">${text}</p>
+            <p class="reviewer-name">- You</p>`;
+        reviewContainer.appendChild(newReview);
+        
+        dialog.close();
+        form.reset();
+    });
+});
