@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 else if (customPartRadioNo.checked) {
                     window.location.href = "specialists-found.html";
                 }
+                else {
+                    window.location.href = "specialists-found.html";
+                }
             }
         }
     }
