@@ -24,3 +24,24 @@ document.addEventListener('DOMContentLoaded', () => {
         goHome.onclick = () => window.location.href = "index.html";
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const signInBtn = document.getElementById('sign-in-btn');
+    if (signInBtn) {
+        signInBtn.onclick = () => {
+            const emailInput = document.getElementById('email-input');
+            value = emailInput.value;
+            if (value) {
+                if (value === "clark24kent@gmail.com") {
+                    window.location.href = "specialist-profile.html";
+                }
+                else if (value === "leonkennedy@gmail.com") {
+                    window.location.href = "user-profile.html";
+                }
+                else {
+                    alert("Invalid email");
+                }
+            }
+        }
+    }
+});
