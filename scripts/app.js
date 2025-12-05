@@ -39,8 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     window.location.href = "user-profile.html";
                 }
                 else {
-                    alert("Invalid email");
+                    alert("Invalid credentials");
                 }
+            }
+            else {
+                alert("No credentials provided");
             }
         }
     }
