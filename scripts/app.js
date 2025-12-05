@@ -48,3 +48,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const viewSiteBtn = document.getElementById('view-site');
+    if (viewSiteBtn) {
+        viewSiteBtn.onclick = () => {
+            window.location.href = "https://www.wayne-ent.com/index.html";
+        }
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const referMeBtn = document.getElementById('refer-me');
+    if (referMeBtn) {
+        referMeBtn.onclick = () => {
+            alert("Referral request sent on your behalf! Expect a follow-up email in the next few days.");
+        }
+    }
+});
