@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {                                                                                                                                                                  
-    const moreOptions = document.getElementById('more-options');                                                                                                                                                       
+    const moreOptions = document.getElementById('more-options');                                                                                                                                                      
     if (moreOptions) {
         moreOptions.addEventListener('change', (event) => {
         const selectedOption = event.target.options[event.target.selectedIndex];
