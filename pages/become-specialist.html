@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Portal</title>
+    <title>Specialist Registration</title>
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="icon" href="../public/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -24,24 +24,96 @@
     </nav>
     <main class="main-body-pay">
         <h2>Become a Specialist</h2>
-        <div class="">
             <div class="new-box-container ">
                 <div class="new-box-row">
                     <div class="new-grid-container">
-                        <div class="new-grid-item">Whats your speciality?</div>
-                        <div class="new-grid-item" style="text-align: center">Upload Resume</div>
-                        <div class="new-grid-item">Do you have a degree?</div>
-                        <div class="new-grid-item">Describe your expertise</div>
+                        <div class="new-grid-item">
+                            <p>What is your speciality?</p> 
+                            <input type="text" class="pay-input">
+                        </div>
+                        <div class="new-grid-item">
+                            <p>Upload Resume</p>
+                            <input type="file" id="upload-file" style="display: none;">
+                            <label for="upload-file" class="new-button">Upload</label>
+                            <i class="fa-solid fa-upload"></i>
+                        </div>
+                        <div class="new-grid-item">
+                            <p>Do you have a degree?</p>
+
+                            <div class="degree-radio">
+                                <div class="new-grid-container" style="row-gap: 15px; column-gap: 5px">
+                                <input type="radio" id="associates" name="degree" value="Associates">
+                                <label for="associates">Associates</label>
+                                
+                                <input type="radio" id="bachelors" name="degree" value="Bachelors">
+                                <label for="bachelors">Bachelors</label>
+                                
+                                <input type="radio" id="masters" name="degree" value="Master's">
+                                <label for="masters">Master's</label>
+                            
+                                <input type="radio" id="other" name="degree" value="Other">
+                                <label for="other">Other</label>
+
+                                <input type="radio" id="none" name="degree" value="None">
+                                <label for="none">None</label>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="new-grid-item">
+                            <p>Describe your expertise</p>
+                            <textarea id="text-area" class="pay-input" rows="10" cols="20"></textarea>
+                        </div>
+                        <div class="new-grid-item">
+                            <div class="item-flex2">
+                                <label for="fname">First Name:</label>
+                                <input type="text" id="fname" class="pay-input">
+                                <label for="lname">Last Name:</label>
+                                <input type="text" id="lname" class="pay-input">
+                            </div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" class="pay-input">
+                        </div>
+                        <div class="new-grid-item">
+                            <label for="passwd">Password:</label>
+                            <input type="password" id="passwd" class="pay-input">
+                            <label for="confirmpasswd">Confirm Password:</label>
+                            <input type="password" id="confirmpasswd" class="pay-input">
+                        </div>
                     </div>
                 </div>
                 
                 <div class="horizontal-divider"></div>
                 
-                <div class="new-box-row">
-                    <div class="new-box-container2">test</div>
+                <div class="new-box-row" style="text-align: center;">
+                    <div class="new-box-container2">
+                        <div>
+                            <p>How many years of experience do you have?</p>
+                            <input type="radio" id="0" name="degree" value="0">
+                            <label for="0">0</label>
+
+                            <input type="radio" id="1" name="degree" value="1">
+                            <label for="1">1</label>
+                            
+                            <input type="radio" id="2" name="degree" value="2">
+                            <label for="2">2</label>
+                            
+                            <input type="radio" id="3" name="degree" value="3">
+                            <label for="3">3</label>
+
+                            <input type="radio" id="4" name="degree" value="4">
+                            <label for="4">4</label>
+
+                            <input type="radio" id="5+" name="degree" value="5+">
+                            <label for="5+">5+</label>
+                        </div>
+                    </div>
+                    <button class="new-button" id="specialist-submit">Submit</button>
                 </div>
+                
             </div>
-        </div>
+            
+
     </main>
     <footer>
         <p>&copy; 2025 ExpertLink Software. All rights reserved.</p>
@@ -50,3 +122,14 @@
     <script src="../scripts/payment.js"></script>
 </body>
 </html>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const submitPayment = document.getElementById('specialist-submit');
+        if (submitPayment) {
+            submitPayment.onclick = () => {
+                alert("Account created");    
+                window.location.href = "index.html";
+            }
+        }
+    });
+</script>
