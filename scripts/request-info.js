@@ -8,11 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (messageText !== '') {
             // Create a new input element for the sent message
-            const sentMessageElement = document.createElement('input');
-            sentMessageElement.type = 'text';
-            sentMessageElement.disabled = true;
+            const sentMessageElement = document.createElement('div');
             sentMessageElement.classList.add('sent-message');
-            sentMessageElement.value = messageText;
+            sentMessageElement.textContent = messageText;
 
             // Append the new message to the message box
             messageBox.appendChild(sentMessageElement);
