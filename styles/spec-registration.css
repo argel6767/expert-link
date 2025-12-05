@@ -1,8 +1,8 @@
 .new-box-container {
     width: 75%;
-    max-width: 750px;
-    min-width: 750px;
-    padding: 20px;
+    max-width: 850px;
+    min-width: 850px;
+    padding: 20px auto;
     border: 2px solid var(--border-color);
     border-radius: 10px;
 }
@@ -12,7 +12,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .new-grid-item {
@@ -37,6 +37,28 @@
     width: 75%;
     margin: 10px auto;
 }
+
+.new-button {
+    border: 2px solid var(--border-color);
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 5px 15px;
+}
+
+.new-button:hover {
+    background-color: var(--primary-light);
+}
+.degree-radio {
+    display: flex; 
+    flex-direction: column;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+
+
+
 
 
 

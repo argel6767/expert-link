@@ -28,17 +28,61 @@
             <div class="new-box-container ">
                 <div class="new-box-row">
                     <div class="new-grid-container">
-                        <div class="new-grid-item">Whats your speciality?</div>
-                        <div class="new-grid-item" style="text-align: center">Upload Resume</div>
-                        <div class="new-grid-item">Do you have a degree?</div>
-                        <div class="new-grid-item">Describe your expertise</div>
+                        <div class="new-grid-item">
+                            <label for="speciality?">What is your speciality?</label> 
+                            <input type="text" id="speciality?">
+                        </div>
+                        <div class="new-grid-item" style="text-align: center">
+                            <div>Upload Resume</div>
+                            <button class="new-button">Upload</button>
+                            <i class="fa-solid fa-upload"></i>
+                        </div>
+                        <div class="new-grid-item">
+                            <p>Do you have a degree?</p>
+
+                            <div class="degree-radio">
+                                <input type="radio" id="associates" name="degree" value="Associates">
+                                <label for="associates">Associates</label>
+                                
+                                <input type="radio" id="bachelors" name="degree" value="Bachelors">
+                                <label for="bachelors">Bachelors</label>
+                                
+                                <input type="radio" id="masters" name="degree" value="Master's">
+                                <label for="masters">Master's</label>
+                            
+                                <input type="radio" id="other" name="degree" value="Other">
+                                <label for="other">Other</label>
+
+                                <input type="radio" id="none" name="degree" value="None">
+                                <label for="none">None</label>
+                            </div>
+                        </div>
+                            
+                        <div class="new-grid-item">
+                            <div>Describe your expertise</div>
+                            <textarea></textarea>
+                        </div>
+                        <div class="new-grid-item">
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="new-grid-item">
+                            <label for="passwd">Password:</label>
+                            <input type="password" id="passwd">
+                            <label for="confirmpasswd">Confirm Password:</label>
+                            <input type="password" id="confirmpasswd">
+                        </div>
                     </div>
                 </div>
                 
                 <div class="horizontal-divider"></div>
                 
                 <div class="new-box-row">
-                    <div class="new-box-container2">test</div>
+                    <div class="new-box-container2">
+                        How many years of experience do you have?
+                    </div>
                 </div>
             </div>
         </div>
