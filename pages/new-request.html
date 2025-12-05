@@ -19,25 +19,58 @@
                 <option data-href="settings.html">Settings</option>
                 <option data-href="index.html">Sign Out</option>
             </select>
-            <main>
-                <div>
-                    <span>
-
-                    </span>
-                    <span>
-                        <input t>
-                    </span>
-                </div>
-                <span>
-                    <button>Cancel</button>
-                    <button>Submit</button>
-                </span>
-            </main>
-            <footer>
-                <p>&copy; 2025 ExpertLink Software. All rights reserved.</p>
-                <img src="../public/logo.png" width="170" height="70"/>
-            </footer>
         </span>
     </nav>
+    <main class="request-form-container">
+        <div class="first-half">
+            <span>
+                <p>Is your request a custom part?</p>
+                <div>
+                    <form>
+                        <input type="radio" name="option" value="yes" id="custom-part-yes">
+                        <label for="custom-part-yes">Yes</label>
+                        <input type="radio" name="option" value="no" id="custom-part-no">
+                        <label for="custom-part-no">No</label>
+                    </form>
+                </div>
+            </span>
+            <span class="input-span">
+                <label for="details">Describe your request:</label>
+                <textarea id="details" name="details" rows="4" cols="50" placeholder="Enter details here..."></textarea>
+            </span>
+            <span>
+                <p>Is this a bulk request?</p>
+                <div>
+                    <form>
+                        <input type="radio" name="option" value="yes">
+                        <label for="option-yes">Yes</label>
+                        <input type="radio" name="option" value="no">
+                        <label for="option-no">No</label>
+                    </form>
+                
+                </div>
+            </span>
+        </div>
+        <div class="second-half">
+            <span class="input-span">
+                <label for="deadline">When do you need your request by?</label>
+                <input type="date" id="deadline" name="deadline">
+            </span>
+            <span class="input-span">
+                <label for="file-upload">Any additional documents for your request (Photos, Diagrams, Models, etc)</label>
+                <input type="file" id="file-upload" name="file-upload" multiple>
+            </span>
+        </div>
+    </main>
+    <span class="request-form-btns">
+        <a href="user-profile.html" class="primary-button">Cancel</a>
+        <div class="primary-button" id="request-submission">Submit</div>
+    </span>
+    <footer>
+        <p>&copy; 2025 ExpertLink Software. All rights reserved.</p>
+        <img src="../public/logo.png" width="170" height="70"/>
+    </footer>
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/new-request.js"></script>
 </body>
 </html>

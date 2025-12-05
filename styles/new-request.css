@@ -1,0 +1,56 @@
+.request-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--bg-light);
+    box-shadow: var(--shadow-lg);
+    border-radius: 0.5rem;
+}
+
+.request-form-container > div {
+  display: contents; /* Makes children participate in parent grid */
+}
+
+.first-half {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.second-half {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.request-form-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.request-form-btns a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.request-form-btns div {
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.input-span {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

@@ -4,6 +4,7 @@
 @import url("./specialist-found.css");
 @import url("./payment-portal.css");
 @import url("../styles/spec-registration.css");
+@import url("../styles/new-request.css");
 
 :root {
     --primary: #2563eb;
