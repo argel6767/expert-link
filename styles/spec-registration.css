@@ -5,6 +5,7 @@
     padding: 20px auto;
     border: 2px solid var(--border-color);
     border-radius: 10px;
+    margin: 5px auto;
 }
 
 .new-grid-container {
@@ -12,17 +13,22 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 20px;
-    padding: 5px;
+    padding: 5px auto;
+
 }
 
 .new-grid-item {
     padding: 15px;
+    margin: 10px auto;
+
 }
 
 .new-box-container2 {
     padding: 20px;
     border: 2px solid var(--border-color);
     border-radius: 10px;
+
+    
 }
 
 .new-box-row {
@@ -43,6 +49,7 @@
     margin-top: 10px;
     margin-right: 10px;
     padding: 5px 15px;
+    background-color: var(--bg-white);
 }
 
 .new-button:hover {
@@ -53,9 +60,17 @@
     flex-direction: column;
     border: 2px solid var(--border-color);
     border-radius: 5px;
-    padding: 10px;
+    padding: 22px;
+    margin: 10px auto;
     display: inline-block;
 }
+
+#text-area { 
+    resize: none;
+    border: 2px solid var(--border-color);
+    margin: 10px auto;
+}
+
 
 
 

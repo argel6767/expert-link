@@ -102,7 +102,7 @@
 }
 
 /*payment.js label css*/
-input {
+.pay-input {
     padding: 10px;
     border: 1px solid var(--border-color);
     border-radius: 5px;
