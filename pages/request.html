@@ -1,27 +1,147 @@
-<DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Request Access</title>
-<meta charaset="utf-8">
-<style>
-    body {  
-        margin: 0;
-        padding: 20px;
-        font-family: Arial, sans-serif;
-    }
-</style>
+    <meta charset="utf-8">
+    <title>User Registration</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: normal;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .subtext {
+            margin-left: 80px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        /* Tabs */
+        .tabs {
+            margin-left: 80px;
+            margin-bottom: -1px; /* so border lines up with panel */
+        }
+
+        .tab {
+            padding: 6px 14px;
+            border: 1px solid #bbb;
+            border-bottom: none;
+            background-color: #eee;
+            cursor: default;
+            font-size: 14px;
+        }
+
+        .tab + .tab {
+            border-left: none;
+        }
+
+        .tab.active {
+            background-color: #fff;
+        }
+
+        /* Card / panel */
+        .panel {
+            margin: 0 80px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 30px 60px;
+            box-sizing: border-box;
+        }
+
+        .panel-inner {
+            display: flex;
+            min-height: 260px;
+        }
+
+        .panel-column {
+            width: 50%;
+        }
+
+        .panel-divider {
+            width: 1px;
+            background-color: #ccc;
+            margin: 0 40px;
+        }
+
+        .field-group {
+            margin-bottom: 35px;
+        }
+
+        .field-group label {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 13px;
+        }
+
+        .field-group input {
+            width: 160px;
+            padding: 4px 6px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 13px;
+        }
+    </style>
 <body>
-    <div class="container">
-        <h2>Sign in</h2>
 
-        <input type=" Enter Email" placeholder="Email">
-        <input type="New Password" placeholder="Password">
-		<input type="Re-Enter Password Password" placeholder="Re-Enter Password">
+    <h1>Welcome to ExpertLink!</h1>
+	<p>Already have an Account? <a href="sign-in.html">Login in</a></p>
 
-        <button>Request Access</button>
+    <div class="subtext">Enter your information below</div>
 
-        <a href="sign-in.html">Already have an account?</a>
+    <!-- Tabs -->
+    <div class="tabs">
+        <span class="tab active">Personal</span>
+        <span class="tab">Shipping</span>
+        <span class="tab">Payment</span>
     </div>
-</body>
+
+    <!-- Main card -->
+    <div class="panel">
+        <div class="panel-inner">
+            <!-- Left column -->
+            <div class="panel-column">
+                <div class="field-group">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First Name">
+                </div>
+
+                <div class="field-group">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name">
+                </div>
+
+                <div class="field-group">
+                    <label>Cell Number</label>
+                    <input type="text" placeholder="#">
+                </div>
+            </div>
+
+            <div class="panel-divider"></div>
+
+            <!-- Right column -->
+            <div class="panel-column">
+                <div class="field-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="field-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Password">
+                </div>
+
+                <div class="field-group">
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Re-Enter Password">
+
+		</div>
+	</body>
 </head>
 </html>
