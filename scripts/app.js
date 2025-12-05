@@ -66,3 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hireSpecialistBtn = document.getElementById('hire-specialist');
+    if (hireSpecialistBtn) {
+        hireSpecialistBtn.onclick = () => {
+            alert("A job request has been sent to this specialist! Expect a reply from them soon.");
+        }
+    }
+});

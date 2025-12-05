@@ -54,3 +54,10 @@
     flex-direction: column;
     gap: 0.5rem;
 }
+
+.request-subheader {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: var(--text-dark);
+}
