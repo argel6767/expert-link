@@ -40,6 +40,7 @@
     background-color: #ef4444;
     color: var(--bg-white);
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .cancel-job button:hover {
