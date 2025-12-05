@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (referMeBtn) {
         referMeBtn.onclick = () => {
             alert("Referral request sent on your behalf! Expect a follow-up email in the next few days.");
+            window.location.href = "user-profile.html";
         };
     }
 
@@ -60,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (hireSpecialistBtn) {
         hireSpecialistBtn.onclick = () => {
             alert("A job request has been sent to this specialist! Expect a reply from them soon.");
+            window.location.href = "user-profile.html";
         };
     }
 });
