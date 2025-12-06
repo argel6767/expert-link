@@ -16,7 +16,7 @@
             </svg>
             <select id="more-options">
                 <option>More</option>
-                <option data-href="specialist-profile.html">Go Back</option>
+                <option data-href="user-profile.html">Go Back</option>
                 <option data-href="settings.html">Settings</option>
                 <option data-href="index.html">Sign Out</option>
             </select>
@@ -29,7 +29,7 @@
             <p>Requester: Leon Kennedy</p>
             <p>Specialist: Clark Kent</p>
             <p>Status:  <select class="progress-dropdown">
-                <option>Shipped</option>
+                <option>Pending Payment</option>
             </select></p>
         </span>
         <h3 class="project-description-sub-header">Project Description</h3>
@@ -38,19 +38,16 @@
             
         </nav>
         
-        <label for="message-box" class="message-box-label">Message Leon</label>
+        <label for="message-box" class="message-box-label">Message Clark</label>
         <div id="message-box" name="message-box">
-            <div class="sent-message">I have accepted your request. I sent over the estimated quote for this request, once payment is received I will send over delivery instructions.</div>
-            <div class="received-message">Sounds good, sending over payment now!</div>
-            <div class="sent-message">Please download and fill out this shipping label <a href="" style="text-decoration: none;">shipping-label.pdf</a>. Then attach it to a box with your projector in it and bring+ship it at the nearest UPS location so I can start working on your request as soon as possible.</div>
-            <div class="received-message">Ok I just brought it over to UPS, should be on its way!</div>
+            <div class="received-message">I have accepted your request. I sent over the estimated quote for this request, once payment is received I will send over delivery instructions.</div>
         </div>
         <span class="send-message">
             <input type="text" id="new-message" name="new-message" placeholder="Type your message here..."/>
             <button id="send-message">Send Message</button>
         </span>
         <nav class="cancel-job">
-            <button id="complete-job">Complete Job</button>
+            <button onclick="location.href='payment-portal.html'">Pay</button>
             <button onclick="location.href='index.html'">Cancel Job</button>
         </nav>
     </main>

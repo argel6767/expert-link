@@ -9,6 +9,25 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+    const moreInfo = document.getElementById('spec-req-info');
+
+    if (moreInfo) {
+        moreInfo.addEventListener('click', () => {
+            window.location.href = 'user-request-info-clark.html';
+        });
+    }
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const moreInfo = document.getElementById('manu-req-info');
+
+    if (moreInfo) {
+        moreInfo.addEventListener('click', () => {
+            window.location.href = 'user-request-info-wayne.html';
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
     const dialog = document.getElementById('review-dialog');
     const form = document.getElementById('review-form');
     const cancelBtn = document.getElementById('cancel-btn');
@@ -41,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             newReview.innerHTML = `
             <p><strong>${'&#9733;'.repeat(rating)}${'&#9734;'.repeat(5 - rating)}</strong></p>
             <p class="review-text">${text}</p>
-            <p class="reviewer-name">- You</p>`;
+            <p class="reviewer-name">Leon Kennedy</p>`;
         reviewContainer.appendChild(newReview);
         
         dialog.close();

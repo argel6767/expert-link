@@ -5,28 +5,28 @@ const specialists = {
         specialty: 'Jewelry',
         experience: 8,
         rating: 4.9,
-        profilePicture: "https://avatar.iran.liara.run/public/boy?username=barry"
+        profilePicture: "../public/barry.png"
     },
     'Carpentry': {
         name: 'Diana Prince',
         specialty: 'Carpentry',
         experience: 10,
         rating: 4.8,
-        profilePicture: "https://avatar.iran.liara.run/public/girl?username=diana"
+        profilePicture: "../public/diana.png"
     },
-    'Woodworking': {
+    'IT': {
         name: 'Clark Kent',
-        specialty: 'Woodworking',
+        specialty: 'IT',
         experience: 7,
         rating: 4.7,
-        profilePicture: "https://avatar.iran.liara.run/public/boy?username=clark"
+        profilePicture: "../public/clark.png"
     },
     'Art': {
         name: 'Selina Kyle',
         specialty: 'Art',
         experience: 9,
         rating: 4.9,
-        profilePicture: "https://avatar.iran.liara.run/public/girl?username=selina"
+        profilePicture: "../public/selina.png"
     }
 };
 
@@ -40,6 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const specialistExperience = gallery.querySelector('.gallery-container .gallery-expert-info p:nth-child(1)');
         const specialistRating = gallery.querySelector('.gallery-container .gallery-expert-info p:nth-child(2)');
 
+        const specialistProfile = gallery.querySelector('#view-profile');
+
         // Function to update specialist display
         const updateSpecialistDisplay = (specialist) => {
             if (specialist) {
@@ -48,6 +50,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 specialistSpecialty.textContent = `Specialty: ${specialist.specialty}`;
                 specialistExperience.textContent = `Years of experience: ${specialist.experience}`;
                 specialistRating.textContent = `Rating: ${specialist.rating}`;
+                
+                if (specialist.name === 'Clark Kent') {
+                    specialistProfile.disabled = false;
+                    specialistProfile.style.cursor = 'pointer';
+                } else {
+                    specialistProfile.disabled = true;
+                    specialistProfile.style.cursor = 'not-allowed';
+                }
             }
         };
 
@@ -68,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const newRequestBtn = document.getElementById('new-request-btn');
     if (newRequestBtn) {
         newRequestBtn.addEventListener('click', () => {
-            window.location.href = 'new-request.html';
+            window.location.href = 'sign-in.html';
         });
     }
 });

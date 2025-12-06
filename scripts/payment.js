@@ -34,19 +34,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
 
             case 'paypal':
-                detailsLi.innerHTML = '';
+                detailsLi.innerHTML = 'Currently Unavailable - Please choose Credit Card/Debit Card option to complete your payment';
                 break;
 
             case 'apple':
-                detailsLi.innerHTML = '';
+                detailsLi.innerHTML = 'Currently Unavailable - Please choose Credit Card/Debit Card option to complete your payment';
                 break;
 
             case 'google':
-                detailsLi.innerHTML = '';
+                detailsLi.innerHTML = 'Currently Unavailable - Please choose Credit Card/Debit Card option to complete your payment';
                 break;
 
             default:
-                detailsLi.innerHTML = '';
+                detailsLi.innerHTML = 'Currently Unavailable - Please choose Credit Card/Debit Card option to complete your payment';
         }
     }
 
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitPayment = document.getElementById('payment-submit');
     if (submitPayment) {
         submitPayment.onclick = () => {
-            alert("Payment has been submitted");    
+            alert("Payment has been submitted please check your email for shipping notifications");    
             window.location.href = "index.html";
         }
     }

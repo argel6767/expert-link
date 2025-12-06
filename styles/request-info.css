@@ -37,14 +37,14 @@
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 0.5rem;
-    background-color: #ef4444;
+    background-color: #2563eb;
     color: var(--bg-white);
     cursor: pointer;
     margin-right: 10px;
 }
 
 .cancel-job button:hover {
-    background-color: #b91c1c;
+    background-color: #1e40af;
 }
 
 .message-box-label {
