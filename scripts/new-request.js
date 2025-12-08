@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const requestSubmission = document.getElementById('request-submission');
     if (requestSubmission) {
         requestSubmission.onclick = () => {
-            alert("Your request has been submitted successfully!");
+            alert("Your request has been submitted successfully! Finding Specialist/Manufacturer");
             const customPartRadioYes = document.getElementById('custom-part-yes');
             const customPartRadioNo = document.getElementById('custom-part-no');
             if (customPartRadioYes && customPartRadioNo) {

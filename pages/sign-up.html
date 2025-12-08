@@ -9,6 +9,7 @@
         body {
             margin: 0;
             padding: 40px;
+            min-width: 1050px;
         }
 
         h1 {
@@ -54,6 +55,7 @@
             border-radius: 6px;
             padding: 30px 60px;
             box-sizing: border-box;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
         .panel-inner {
@@ -82,17 +84,17 @@
         }
 
         .field-group input {
-            width: 160px;
+            width: 30%;
             padding: 4px 6px;
             border-radius: 4px;
             border: 1px solid #ccc;
             font-size: 13px;
         }
+
     </style>
 <body>
 
-    <h1>Welcome to ExpertLink!</h1>
-	<p>Already have an Account? <a href="sign-in.html">Log in</a></p>
+    <h1 style="font-weight: bold;">Welcome to ExpertLink!</h1>
 
     <div class="subtext">Enter your information below</div>
 
@@ -142,22 +144,27 @@
                     <label>Confirm Password</label>
                     <input type="password" placeholder="Re-Enter Password">
 		        </div>
-                <button class="new-button" id="user-submit">Submit</button>
+                <div class="horizontal-divider" style="grid-column: 1 / -1; margin-bottom: 0px; margin-left: 0px; margin-top: 0px; width: 32%;"></div>
+                <button class="new-button" id="user-submit" style="width: 32%;">Submit</button>
+                <p>Already have an Account? <a href="sign-in.html">Log in</a></p>
             </div>
             
         </div>
         
         </div>
         
-        
+        <footer>
+            <p style="margin-left: 80px;">&copy; 2025 ExpertLink Software. All rights reserved.</p>
+            <img src="../public/logo.png" width="170" height="70" style="margin-right: 80px;"/>
+        </footer>
 	</body>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
         const submitPayment = document.getElementById('user-submit');
             if (submitPayment) {
                 submitPayment.onclick = () => {
-                    alert("Account created");    
-                    window.location.href = "index.html";
+                    alert("Account created. Please sign in using your newly created credentials");    
+                    window.location.href = "sign-in.html";
                 }
             }
         });

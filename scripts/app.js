@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const viewSiteBtn = document.getElementById('view-site');
     if (viewSiteBtn) {
         viewSiteBtn.onclick = () => {
-            window.location.href = "https://www.wayne-ent.com/index.html";
+            window.open("https://www.wayne-ent.com/index.html", "_blank");
         };
     }
 
@@ -63,5 +63,15 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("A job request has been sent to this specialist! Expect a reply from them soon.");
             window.location.href = "user-profile.html";
         };
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const completeJob = document.getElementById('complete-job');
+    if (completeJob) {
+        completeJob.onclick = () => {
+            alert("Job has been completed");    
+            window.location.href = "index.html";
+        }
     }
 });
